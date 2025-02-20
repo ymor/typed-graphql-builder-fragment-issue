@@ -37,5 +37,12 @@ const cardFragmentAllMutation = mutation(m => [
     }, _ => cardFragmentAll)
 ])
 
+/*
+    this is incorrectly typed as 
+    
+    type CardFragmentAllMutationVars = {
+        [x: string]: any;
+    }
+*/
 type CardFragmentAllMutationVars = VariablesOf<typeof cardFragmentAllMutation>
 type CardFragmentAllMutationResult = ResultOf<typeof cardFragmentAllMutation>
